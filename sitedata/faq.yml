@@ -1,5 +1,5 @@
 FAQ:
-  - Section: Conference Advice
+  - Section: General Information
     QA:
-      - Question: What should I put on the paper pages?
-        Answer: "Depending on your conference, you might want to consider having embeded videos, chat rooms, or rendered posters. For ICLR, we used SlidesLive and Rocket.Chat. In another conference we used PDF.js to render posters."
+      - Question: What is this class?
+        Answer: "This class is the capstone project class of the Masters in IT [MIT] Big Data Science at the University of Pretoria. You can view the public site of the class at https://dsfsi.github.io/mit808"
