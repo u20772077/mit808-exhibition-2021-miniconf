@@ -1,35 +1,32 @@
-## MiniConf
+## MIT808: Data Science Capstone Exhibition 2021
 
-<a href="https://mini-conf.github.io/index.html">MiniConf</a> is a virtual conference in a box. It manages the papers, schedules, and speakers for an academic conference run virtually. It can be easily integrated with interactive tools such as video, chat, and QA.
+<a href="https://mit808-exhibition-2020.github.io/index.html">MIT808: Data Science Capstone Exhibition 2021</a> is a virtual exhibition of the MIT808 class which is part of the Masters in IT [MIT] Big Data Science program at the University of Pretoria.
 
-<img src="https://raw.githubusercontent.com/Mini-Conf/Mini-Conf/master/miniconf.gif">
 
-MiniConf was originally built to host <a href="https://iclr.cc/virtual_2020">ICLR 2020</a> a virtual conference with 6000 participants and have been used to host a wide variety of major conferences.
+## View the 2021exit
+ projects
 
-* AAAI 2021 
-* [ACMC 2020 (Australian Computer Music Conference)](https://acmc2020.com/index.html)
-* [ACM-CHIL 2020 (Conference on Health, Inference, and Learning)](https://www.chilconference.org/)
-* [ACL 2020 (Association of Computational Linguistics)](https://virtual.acl2020.org/index.html)
-* [AIStats 2020](https://aistats2020.net/)
-* [AKBC 2020 (Automated Knowledge Base Construction)](https://akbc.apps.allenai.org/index.html)
-* [EMNLP 2020 (Empirical Methods in NLP)](https://virtual.2020.emnlp.org/index.html)
-* [ICLR 2020 (International Conference on Learning Representations)](https://iclr.cc/virtual_2020)
-* [ICML 2020 (International Conference on Machine Learning)](https://icml.cc/virtual/2020/index.html)
-* [IEEE VIS 2020 (IEEE conference on Visualization and Visual Analytics)](https://virtual.ieeevis.org/)
-* [NeurIPS 2020 (Neural Information Processing Systems Conference)](https://neurips.cc/virtual/2020/public/)
-* [SIGIR 2020 (Information Retrieval)](https://sigir-schedule.baai.ac.cn/papers)
-* [Data Science Capstone Exhibition, University of Pretoria](https://up-mitc-ds.github.io/808exhibition2020/index.html)
+You can view the projects by heading to the <a href="papers.html">Projects</a> tab.
 
-It is designed to be:
+### MIT 808 Information
+
+In this module students will carry out a Data Science Capstone project that brings together the theoretical modules students would have done in the first year of your MIT C Big Data Science program. 
+
+You can find out a bit more about the course here <a href="https://dsfsi.github.io/mit808/">MIT808 Public Website</a>
+
+The partners for 2020 were SDG Hub, FABI, EMS and 
+
+### Masters in IT: Big Data Science
+
+You can find out about the Masters in IT: Big Data Science at our official <a href='https://cs.up.ac.za/prospective/postgrad/mit'>website</a>. 
+
+<!-- <img src="https://raw.githubusercontent.com/Mini-Conf/Mini-Conf/master/miniconf.gif"> -->
+
+<!-- It is designed to be:
 
 * Run based on static files hosted by any server. 
 * Modifiable without a database using CSV files.
 * Easy to extend to fit any backend or additional frontend tools. 
-
-## Links
-Demo system: <a href='http://www.mini-conf.org'> http://www.mini-conf.org</a>
-
-Source Code: <a href='https://github.com/Mini-Conf/Mini-Conf'> https://github.com/Mini-Conf/Mini-Conf</a>
 
 ## Get Started
 
@@ -69,34 +66,26 @@ Contains additional preprocessing to add visualizations, recommendations, schedu
 
 ### Extensions
 
-MiniConf is designed to be a completely static solution. However it is designed to integrate well with dynamic third-party solutions. We directly support the following providers: 
+Miniconf is designed to be a completely static solution. However it is designed to integrate well with dynamic third-party solutions. We directly support the following providers: 
 
 * Rocket.Chat: The `chat/` directory contains descriptions for setting up a hosted Rocket.Chat instance and for embedding chat rooms on individual paper pages. You can either buy a hosted setting from Rocket.chat or we include instructions for running your own scalable instance through sloppy.io. 
 
-* Auth0 : The code can integrate through Auth0.com to provide both page login (through javascript gating) and OAuth SSO with Rocket Chat. The documentation on Auth0 is very easy to follow, you simply need to create an Application for both the MiniConf site and the Rocket.Chat server. You then enter in the Client keys to the appropriate configs. 
+* Auth0 : The code can integrate through Auth0.com to provide both page login (through javascript gating) and OAuth SSO with Rocket Chat. The documentation on Auth0 is very easy to follow, you simply need to create an Application for both the Miniconf site and the Rocket.Chat server. You then enter in the Client keys to the appropriate configs. 
 
 * SlidesLive: It is easy to embedded any video provider -> YouTube, Vimeo, etc. However we have had great experience with SlidesLive and recommend them as a host. We include a slideslive example on the main page. 
 
 * PDF.js: For conferences that use posters it is easy to include an embedded pdf on poster pages. An example is given. 
 
 
+### Example
+
+Mini-Conf was originally built to host <a href="https://iclr.cc/virtual_2020">ICLR 2020</a> a virtual conference with 6000 participants. 
+
 ### Acknowledgements
 
 MiniConf was built by [Hendrik Strobelt](http://twitter.com/hen_str) and [Sasha Rush](http://twitter.com/srush_nlp).
 
-Thanks to Darren Nelson for the original design sketches. Shakir Mohamed, Martha White, Kyunghyun Cho, Lee Campbell, and Adam White for planning and feedback. Hao Fang, Junaid Rahim, Jake Tae, Yasser Souri, Soumya Chatterjee, and Ankshita Gupta for contributions. 
+Thanks to Darren Nelson for the original design sketches. Shakir Mohamed, Martha White, Kyunghyun Cho, Lee Campbell, and Adam White for planning and feedback. Hao Fang, Junaid Rahim, Jake Tae, Yasser Souri, Soumya Chatterjee, and Ankshita Gupta for contributions.  -->
 
-### Citation
-Feel free to cite MiniConf:
-```bibtex
-@misc{RushStrobelt2020,
-    title={MiniConf -- A Virtual Conference Framework},
-    author={Alexander M. Rush and Hendrik Strobelt},
-    year={2020},
-    eprint={2007.12238},
-    archivePrefix={arXiv},
-    primaryClass={cs.HC}
-}
-```
 
 

@@ -44,7 +44,6 @@ app.config.from_object(__name__)
 freezer = Freezer(app)
 markdown = Markdown(app)
 
-
 # MAIN PAGES
 
 
@@ -59,11 +58,6 @@ def index():
     return redirect("/index.html")
 
 
-@app.route("/favicon.ico")
-def favicon():
-    return send_from_directory(site_data_path, "favicon.ico")
-
-
 # TOP LEVEL PAGES
 
 
@@ -75,11 +69,11 @@ def home():
     return render_template("index.html", **data)
 
 
-@app.route("/help.html")
+@app.route("/about.html")
 def about():
     data = _data()
     data["FAQ"] = site_data["faq"]["FAQ"]
-    return render_template("help.html", **data)
+    return render_template("about.html", **data)
 
 
 @app.route("/papers.html")
@@ -95,25 +89,25 @@ def paper_vis():
     return render_template("papers_vis.html", **data)
 
 
-@app.route("/calendar.html")
-def schedule():
-    data = _data()
-    data["day"] = {
-        "speakers": site_data["speakers"],
-        "highlighted": [
-            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
-        ],
-    }
-    return render_template("schedule.html", **data)
+# @app.route("/calendar.html")
+# def schedule():
+#     data = _data()
+#     data["day"] = {
+#         "speakers": site_data["speakers"],
+#         "highlighted": [
+#             format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
+#         ],
+#     }
+#     return render_template("schedule.html", **data)
 
 
-@app.route("/workshops.html")
-def workshops():
-    data = _data()
-    data["workshops"] = [
-        format_workshop(workshop) for workshop in site_data["workshops"]
-    ]
-    return render_template("workshops.html", **data)
+# @app.route("/workshops.html")
+# def workshops():
+#     data = _data()
+#     data["workshops"] = [
+#         format_workshop(workshop) for workshop in site_data["workshops"]
+#     ]
+#     return render_template("workshops.html", **data)
 
 
 def extract_list_field(v, key):
@@ -125,25 +119,24 @@ def extract_list_field(v, key):
 
 
 def format_paper(v):
-    list_keys = ["authors", "keywords", "sessions"]
+    list_keys = ["authors", "keywords", "session"]
     list_fields = {}
     for key in list_keys:
         list_fields[key] = extract_list_field(v, key)
 
     return {
-        "UID": v["UID"],
-        "title": v["title"],
+        "id": v["UID"],
         "forum": v["UID"],
-        "authors": list_fields["authors"],
-        "keywords": list_fields["keywords"],
-        "abstract": v["abstract"],
-        "TLDR": v["abstract"],
-        "recs": [],
-        "sessions": list_fields["sessions"],
-        # links to external content per poster
-        "pdf_url": v.get("pdf_url", ""),  # render poster from this PDF
-        "code_link": "https://github.com/Mini-Conf/Mini-Conf",  # link to code
-        "link": "https://arxiv.org/abs/2007.12238",  # link to paper
+        "content": {
+            "title": v["title"],
+            "authors": list_fields["authors"],
+            "keywords": list_fields["keywords"],
+            "abstract": v["abstract"],
+            "TLDR": v["abstract"],
+            "recs": [],
+            "session": list_fields["session"],
+            "pdf_url": v.get("pdf_url", ""),
+        },
     }
 
 
@@ -224,6 +217,7 @@ def serve(path):
 
 @freezer.register_generator
 def generator():
+
     for paper in site_data["papers"]:
         yield "poster", {"poster": str(paper["UID"])}
     for speaker in site_data["speakers"]:
