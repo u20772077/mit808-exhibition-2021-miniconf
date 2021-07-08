@@ -14,8 +14,16 @@ In this module students will carry out a Data Science Capstone project that brin
 
 You can find out a bit more about the course here <a href="https://dsfsi.github.io/mit808/">MIT808 Public Website</a>
 
-The partners for 2020 were SDG Hub, FABI, EMS and 
+#### The partners for 2021 :
+* The Faculty of Law and both the late Prof Christof Heyns and myself overlooked the project. He was a professor of law at the Institute for International and Comparative Law in Africa while I’m an associate professor in the Department of Private Law. - Prof Gustav Muller
 
+* Dr Ilaria Germishuizen, Research Group Leader, Institute for Commercial Forestry Research, University of KwaZulu-Natal.
+  Prof Bernard Slippers, Director: FABI, University of Pretoria.
+  Prof Brett Hurley, Professor, FABI, Department of Zoology and Entomology, FABI, University of Pretoria.
+  Dr Quentin Santana, Postdoctoral Fellow, FABI, Department of Biochemistry, Genetics and Microbiology.
+  Arné Schreuder, Client Engagement Lead, Advance.io.
+* Dr Schalk Venter, York Timbers and form part of the York Chair in Multidisciplinary Wood Engineering.
+  The GSTM is the Department of Engineering and Technology Management within EBIT faculty.
 ### Masters in IT: Big Data Science
 
 You can find out about the Masters in IT: Big Data Science at our official <a href='https://cs.up.ac.za/prospective/postgrad/mit'>website</a>. 
